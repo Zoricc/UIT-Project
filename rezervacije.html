@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<title>Klub Teatar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Navigacioni meni -->
+<div class="top border-bottom background-purple padding-16 padding-side-16">
+  <div class="wide padding card">
+    <a href="index.html" class="bar-item glow-on-hover" id="logo" style="font-size: 18px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Klub Teatar</a>
+    <div class="right hide-small" id="nav">
+      <a href="projekcije.html" class="bar-item glow-on-hover">Projekcije</a>
+      <a href="rezervacije.html" class="bar-item glow-on-hover">Rezervacije</a>
+      <a href="galerija.html" class="bar-item glow-on-hover">Galerija</a>
+      <a href="kontakt_strana.html" class="bar-item glow-on-hover">Kontakt</a>
+      <a href="promocije.html" class="bar-item glow-on-hover">Promocije</a>
+    </div>
+    <div class="ddmenu margin-bottom"><a onClick="open_close()" id="ddmenu" style="margin:0 auto; display:block;">&#9776;</a></div>
+    <div class="ddclosed">
+      <a href="projekcije.html" class="glow-on-hover" style="margin:0 auto; display:block;">Projekcije</a>
+      <a href="galerija.html" class="glow-on-hover" style="margin:0 auto; display:block;">Galerija</a>
+      <a href="kontakt_strana.html" class="glow-on-hover" style="margin:0 auto; display:block;">Kontakt</a>
+      <a href="rezervacije.html" class="glow-on-hover" style="margin:0 auto; display:block;">Rezervacije</a>
+      <a href="promocije.html" class="glow-on-hover" style="margin:0 auto; display:block;">Promocije</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="content padding-32" style="max-width:1564px">
+  <div class="padding-32">
+    <div class="row-padding background-black">
+      <h2 class="border-bottom transparent center">Rezervacije</h2>
+      <div class="col l12 m12 margin-bottom">
+        <div class="col l8 m6 margin-bottom padding-side-16 padding-16">
+          <form method="post" class="kontakt-forma" novalidate>
+            <iframe class="col l12 m12 s12" id="youtube-player" height="400px" src="https://www.youtube.com/embed/5zdBG-iGfes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col l6 m6 margin-bottom padding-side-16">
+              <div class="col l12 m12 margin-bottom padding-side-16">
+                <input class="input margin-top padding-16" id="email" type="email" placeholder="E-mail" required>
+                <input class="input section margin-top padding-16" id="telefon" type="tel" placeholder="+381 63 101 1010" pattern="[+]{1}[3]{1}[8]{1}[1]{1} [6]{1}[0-6,9]{1} [0-9]{3} [0-9]{4}$" required>
+                <select size="1" name="Film" class="input margin-top padding-16" id="Film" onchange="changeImg(this)" required>
+                  <option value="1">The King's Man: Početak</option>
+                  <option value="2">Dina</option>
+                  <option value="3">Spajdermen - Put bez povratka</option>
+                  <option value="4">Vuk i lav</option>
+                  <option value="5">Enkanto</option>
+                  <option value="6">Matriks - Uskrsnuća</option>
+                  <option value="7">Zlatni dečko</option>
+                  <option value="8">Mržnja puna ljubavi</option>
+                  <option value="9">Kliford - veliki crveni pas</option>
+                  <option value="10">Aleja noćnih mora</option>
+                  <option value="11">Vrisak</option>
+                  <option value="12">Nema vremena za umiranje</option>
+                </select>
+              </div>
+            </div>
+            <div class="col l6 m6 padding-side-16 center padding-16">
+              <label class="input sectionpadding-16">Vreme projekcije:</label>
+              <input class="margin-top padding-16" type="radio" id="15c" name="vreme" value="15" required><label for="15c">  15:00  </label>
+              <input class="margin-top padding-16" type="radio" id="18c" name="vreme" value="18" required><label for="18c">  18:00  </label>
+              <input class="margin-top padding-16" type="radio" id="21c" name="vreme" value="21" required><label for="21c">  21:00  </label></br>
+            </div>
+            <div class="col l6 m6 padding-side-16 center">
+              <label class="input section padding-16 right" for="broj-karata">Broj karata:</label>
+              <input class="margin-top" type="number" id="broj-karata" name="tentacles" min="1" value="1"></br>
+            </div>
+          <div class="col l12 m12 s12 center"><button class="margin-top glow-on-hover" type="submit" onclick="validate()">Rezerviši</button></div>
+          </form>
+        </div>
+        <div class="col l4 m6 margin-bottom padding-side-16 padding-16">
+          <img src="img/film1.jpg" alt="film-za-rezervaciju" style="width:100%" class="image-hover" id="film-za-rezervaciju">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Futer -->
+<footer class="wide center border-top background-purple bottom padding-16">
+  <div class="margin-bottom">Klub Teatar - Bulevar Arsenija Čarnojevića 39 - Novi Beograd -
+    <a href="mailto: markozoric53@gmail.com" class="no-deco">markozoric53@gmail.com</a> - 
+    <a href="tel:+381691016677">+381 65 51 31 775 </a>
+  </div>
+  <div>
+    <a href="projekcije.html" class="bar-item glow-on-hover">Projekcije</a>
+    <a href="galerija.html" class="bar-item glow-on-hover">Galerija</a>
+    <a href="kontakt_strana.html" class="bar-item glow-on-hover">Kontakt</a>
+    <a href="rezervacije.html" class="bar-item glow-on-hover">Rezervacije</a>
+    <a href="rezervacije-podaci.html" class="bar-item glow-on-hover">Podaci o rezervacijama</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</body>
+</html>

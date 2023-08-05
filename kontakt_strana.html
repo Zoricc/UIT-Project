@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<title>Klub Teatar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Navigacioni meni -->
+<div class="top border-bottom background-purple padding-16 padding-side-16">
+  <div class="wide padding card">
+    <a href="index.html" class="bar-item glow-on-hover" id="logo" style="font-size: 18px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Klub Teatar</a>
+    <div class="right hide-small" id="nav">
+      <a href="projekcije.html" class="bar-item glow-on-hover">Projekcije</a>
+      <a href="rezervacije.html" class="bar-item glow-on-hover">Rezervacije</a>
+      <a href="galerija.html" class="bar-item glow-on-hover">Galerija</a>
+      <a href="kontakt_strana.html" class="bar-item glow-on-hover">Kontakt</a>
+      <a href="promocije.html" class="bar-item glow-on-hover">Promocije</a>
+    </div>
+    <div class="ddmenu margin-bottom"><a onClick="open_close()" id="ddmenu" style="margin:0 auto; display:block;">&#9776;</a></div>
+    <div class="ddclosed">
+      <a href="projekcije.html" class="glow-on-hover" style="margin:0 auto; display:block;">Projekcije</a>
+      <a href="galerija.html" class="glow-on-hover" style="margin:0 auto; display:block;">Galerija</a>
+      <a href="kontakt_strana.html" class="glow-on-hover" style="margin:0 auto; display:block;">Kontakt</a>
+      <a href="rezervacije.html" class="glow-on-hover" style="margin:0 auto; display:block;">Rezervacije</a>
+      <a href="promocije.html" class="glow-on-hover" style="margin:0 auto; display:block;">Promocije</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="content padding-32" style="max-width:1564px">
+    <div class="padding-32">
+      <form method="post" class="kontakt-forma">
+        <h2 class="border-bottom background-purple padding-32 center">Kontakt</h3>
+        <div class="col l12 m12 margin-bottom">
+          <div class="col l6 m6 s12 margin-bottom margin-top padding-side-16">
+            <input class="input input-margin margin-top padding-16" id="ime" type="text" placeholder="Ime" required>
+            <input class="input  margin-top padding-16" id="prezime" type="text" placeholder="Prezime" required>
+            
+          </div>
+          <div class="col l6 m6 s12 margin-bottom margin-top padding-side-16">
+            <input class="input input-margin section margin-top padding-16" id="naslov" type="subject" placeholder="Naslov" required>
+            <input class="input section margin-top padding-16" id="poruka" type="text" placeholder="Poruka" required>
+          </div>
+        </div>
+        <button class="col l12 m12 margin-top padding-side-16 glow-on-hover center" type="submit">
+          Pošaljite poruku
+        </button>
+      </form>
+    </div>
+  </div>
+
+<!-- Futer -->
+<footer class="wide center border-top background-purple bottom padding-16">
+  <div class="margin-bottom">Cinemania - Bulevar Arsenija Čarnojevića 39 - Novi Beograd -
+    <a href="mailto: markozoric53@gmail.com" class="no-deco">markozoric53@gmail.com</a> - 
+    <a href="tel:+381691016677">+381 65 51 31 775 </a>
+  </div>
+  <div>
+    <a href="projekcije.html" class="bar-item glow-on-hover">Projekcije</a>
+    <a href="galerija.html" class="bar-item glow-on-hover">Galerija</a>
+    <a href="kontakt_strana.html" class="bar-item glow-on-hover">Kontakt</a>
+    <a href="rezervacije.html" class="bar-item glow-on-hover">Rezervacije</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
